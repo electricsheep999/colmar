@@ -1,42 +1,107 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:700|Source+Sans+Pro:300,400&display=swap" rel="stylesheet">
-    
-    </head>
-    <body>
-        <header class="desktop">
-            <!--logo-->
-                <img src="resources/images/ic-logo.svg" /><p>COLMAR ACADEMY</p>
-                <!--nav-->
-                    <ul>
-                        <li><a href="#">On campus</a></li>
-                        <li><a href="#">Online or companies</a></li>
-                        <li><a href="#">Sign in</a></li>
-                    </ul>
-        </header>
-        <header class="mobile">
-            <img src="resources/images/ic-logo.svg" />
-            <img src="resources/images/ic-on-campus.svg"/>
-            <img src="resources/images/ic-online.svg"/>
-            <img src="resources/images/ic-login.svg"/>
-        </header>
-        <main>
-            <div class="learn">
-                <img src="resources/images/banner.jpg"/>
-                <div class="cta">
-                    <h2>Learn something<br> new everyday</h2>
-                    <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
-                    <button><p>Start here</p></button>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,600|Source+Sans+Pro:300,400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="desktop">
+        <!--logo-->
+        <div class="logo">
+            <img id="inline" src="resources/images/ic-logo.svg" />
+            <p>COLMAR ACADEMY</p>
+        </div>
+        <!--nav-->
+        <ul id="menu">
+            <li><a href="#">On campus</a></li>
+            <li><a href="#">Online or companies</a></li>
+            <li><a href="#">Sign in</a></li>
+        </ul>
+    </header>
+    <header class="mobile">
+        <img src="resources/images/ic-logo.svg" />
+        <img src="resources/images/ic-on-campus.svg" />
+        <img src="resources/images/ic-online.svg" />
+        <img src="resources/images/ic-login.svg" />
+    </header>
+    <main>
+        <!--banner-->
+        <div class="banner">
+            <img src="resources/images/banner.jpg" />
+            <div class="textbox">
+                <h2>Learn something new everyday</h2>
+                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
+                <button><p id="button-p">Start here</p></button>
+            </div>
+        </div>
+        <div class="mobile-container">
+            <!--info cards-->
+            <div class="info-card">
+                <img src="resources/images/information-orientation-mobile.jpg" />
+                <div class="info-text">
+                    <h3>Orientation date</h3>
+                    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                    <p class="more"><a href="#">Read more</a></p>
                 </div>
             </div>
-
-        </main>
-        <footer>
-
-        </footer>
-    </body>
+            <div class="info-card">
+                <img src="resources/images/information-campus-mobile.jpg" />
+                <div class="info-text">
+                    <h3>Our campus</h3>
+                    <p>Find which campus is close by you</p>
+                    <p class="more"><a href="#">Read more</a></p>
+                </div>
+            </div>
+            <div class="info-card">
+                <img src="resources/images/information-guest-lecture-mobile.jpg" />
+                <div class="info-text">
+                    <h3>Special guest lecture</h3>
+                    <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                    <p class="more"><a href="#">Read more</a></p>
+                </div>
+            </div>
+            <!--courses-->
+            <div class="courses">
+                <h2 class="subheading">Start learning</h2>
+                <div class="flexbox">
+                    <p>Software engineering</p>
+                </div>
+                <div class="flexbox">
+                    <p>Computer art</p>
+                </div>
+                <div class="flexbox">
+                    <p>Design</p>
+                </div>
+                <div class="flexbox">
+                    <p>Data</p>
+                </div>
+                <div class="flexbox">
+                    <p>Business</p>
+                </div>
+                <div class="flexbox">
+                    <p>Marketing</p>
+                </div>
+            </div>
+            <!--thesis-->
+            <div class="thesis">
+                <h2 class="subheading">Thesis exhibits</h2>
+                <div class="video-container">
+                    <video controls>
+                        <source src="resources/videos/thesis.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="footer">&copy; 2020 Colmar Academy. All rights reserved</p>
+        <p class="design">Designed by Eunsoo Lee, 2020</p>
+    </footer>
+</body>
 
 
 </html>
